@@ -30,7 +30,7 @@
     <artifactId>data</artifactId>
 
     <modules>
-        <module>data-services</module>
+<!--        <module>data-services</module>-->
     </modules>
 
 </project>
