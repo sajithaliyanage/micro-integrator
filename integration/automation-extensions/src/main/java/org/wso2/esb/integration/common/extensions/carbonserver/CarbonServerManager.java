@@ -287,7 +287,6 @@ public class CarbonServerManager {
             errorStreamHandler.stop();
             process.destroy();
             process = null;
-
             if (!skipRunningCodeCoverage && isCoverageEnable) {
                 try {
                     log.info("Generating Jacoco code coverage...");

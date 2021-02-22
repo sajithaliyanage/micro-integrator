@@ -1333,10 +1333,10 @@
             </activation>
             <modules>
                 <module>components</module>
-<!--                <module>features</module>-->
-<!--                <module>p2-profile</module>-->
-<!--                <module>distribution</module>-->
-<!--                <module>integration</module>-->
+                <module>features</module>
+                <module>p2-profile</module>
+                <module>distribution</module>
+                <module>integration</module>
             </modules>
         </profile>
     </profiles>

@@ -16,8 +16,7 @@
   ~  specific language governing permissions and limitations
   ~  under the License.
 
--->
-<automation xmlns="automation_mapping.xsd">
+--><automation xmlns="automation_mapping.xsd">
     <!--  =================================================  -->
     <!--                   Parameters                        -->
     <!--  =================================================  -->
@@ -33,7 +32,7 @@
         <!--
          Change this to true if you want to generate coverage statistics
         -->
-        <coverage>false</coverage>
+        <coverage>true</coverage>
         <!--
          Change this to true if you want to enable framework dashboard
         -->
@@ -273,7 +272,7 @@
                     <parameter name="-DportOffset" value="200"/>
 
                     <parameter name="startupScript" value="micro-integrator"/>
-                    <parameter name="-DgracefulShutdown" value="false"></parameter>
+                    <parameter name="-DgracefulShutdown" value="false"/>
                     <!--<parameter name="cmdArg" value="debug 5005" />-->
                 </class>
                 <!--<class>

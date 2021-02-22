@@ -16,14 +16,15 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-      - name: Build Carbon-Mediation with Maven
+      - name: Build micro integrator with Maven
         run: mvn -B clean install --file pom.xml -fae
       - name: Upload unit test coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
         with:
           flags: unit_tests
-#      - name: Upload integration test coverage to Codecov
-#          uses: codecov/codecov-action@v1.2.1
-#          with:
-#            flags: integration_tests
-#            directory: ../product-apim/
+          directory: components/
+      - name: Upload integration test coverage to Codecov
+        uses: codecov/codecov-action@v1.2.1
+        with:
+          flags: integration_tests
+          directory: integration/
