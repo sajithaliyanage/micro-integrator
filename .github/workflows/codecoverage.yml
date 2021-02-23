@@ -21,7 +21,7 @@ jobs:
       - name: Upload unit test coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
         with:
-          flags: unit_tests
+          flags: unit_tests,mi_unit_tests
           directory: components/
       - name: Upload integration test coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
