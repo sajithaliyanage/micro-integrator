@@ -41,6 +41,12 @@
                     <exclude name=".*" />
                 </methods>
             </class>
+
+            <class name="org.wso2.carbon.esb.mediator.test.aggregate.AggregateWithHighMaxAndLowMinTestCase">
+                <methods>
+                    <exclude name=".*" />
+                </methods>
+            </class>
         </classes>
     </test>
 

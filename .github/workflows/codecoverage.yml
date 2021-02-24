@@ -17,13 +17,16 @@ jobs:
         with:
           java-version: 1.8
       - name: Build micro integrator with Maven
+        continue-on-error: true
         run: mvn -B clean install --file pom.xml -fae
       - name: Upload unit test coverage to Codecov
+        continue-on-error: true
         uses: codecov/codecov-action@v1.2.1
         with:
           flags: unit_tests,mi_unit_tests
           directory: components/
       - name: Upload integration test coverage to Codecov
+        continue-on-error: true
         uses: codecov/codecov-action@v1.2.1
         with:
           flags: integration_tests
