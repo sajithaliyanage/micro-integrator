@@ -187,7 +187,7 @@
 <!--        <packages>-->
 <!--            <package name="org.wso2.carbon.esb.mailto.transport.sender.test"/>-->
 <!--        </packages>-->
-    </test>
+<!--    </test>-->
 
 <!--    <test name="SSL Test" preserve-order="true" verbose="2">-->
 <!--        <packages>-->
