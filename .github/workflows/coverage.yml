@@ -3,7 +3,7 @@ name: CodeCov Coverage Uploader
 on:
   push:
     branches:
-      - master
+      - testcov
 
 jobs:
   build:
